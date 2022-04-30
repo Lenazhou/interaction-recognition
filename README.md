@@ -26,10 +26,6 @@ Note: We also provide a simple model, which achieves 100%, 90.63%  on UT  and BI
  # Two-stream ensemble
  To ensemble the results of two stream. Run `python ensemble.py`
  # Citation
-  `@inproceedings{Jin2022hir,
-  }`
- 
-
     @inproceedings{Jin2022hir,
 	    title = {Human Interaction Recognition with Skeletal Attention and Shift Graph Convolution},
 	    author = {Jin Zhou and Zhenhua Wang and Jiajun Meng and Shen Liu and Jianhua Zhang and Shengyong chen},
