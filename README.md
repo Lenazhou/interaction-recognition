@@ -8,11 +8,12 @@ Note: We also provide a simple model, which achieves 100%, 90.63%  on UT  and BI
  - gcc 5.5.0
 # Data Preparation
  - Download the raw data of UT and BIT-Interaction. 
- - Download the raw data for Campus-Interaction (CI) here: [Baidu](www.baiduyun.com).
+ - Download the raw data for Campus-Interaction (CI) here: [Baidu,code:smd3](https://pan.baidu.com/s/1gDiufsvR-v7IdNCShXoYBg 
+).
  - Use [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) to obtain skeletons and skeleton bboxes.
  - Use [enter link description here](https://github.com/ifzhang/FairMOT) to obtain tracking bboxes.
  - Combine skeleton bboxes and tracking bboxes with python `python compute_bbox.py`
- - Data preprocessing files to `./data/dataset_name`. One example can be downloaded [here](www.baidu.com)
+ - Data preprocessing files to `./data/dataset_name`. One example can be downloaded [here](https://pan.baidu.com/s/1gDiufsvR-v7IdNCShXoYBg)
 # Trianing & Testing
  - For UT
  `python main.py --dataset UT --stream appearance`
