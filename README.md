@@ -16,9 +16,13 @@ Note: We also provide a simple model, which achieves 100%, 90.63%  on UT  and BI
 # Trianing & Testing
  - For UT
  `python appearance_train.py --train True --dataset ut --config ./config/ci/default-a.yaml`
+ 
  `python appearance_train.py --train False --dataset ut --config ./config/ci/default-a.yaml`
+ 
  `python pose_train.py --dataset ut --config ./config/ut/default-p.yaml`
+ 
  `python pose_train.py --phase test --dataset ut --config ./config/ci/default-a.yaml`
+ 
  - For BIT
  `python appearance_train.py --train True --dataset bit --config ./config/bit/default-a.yaml`
  `python appearance_train.py --train False --dataset bit --config ./config/bit/default-a.yaml`
