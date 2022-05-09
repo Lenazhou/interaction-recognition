@@ -1,0 +1,16 @@
+work_dir: ./work_dir/ci
+data_dir: /home/zhenghua/two-stream-a
+dataset_dir: /home/zhenghua/zj/dataset/CI
+pose_dir: /media/zhenghua/zhenhua21/CI_pose
+weight_decay: 0.01
+lr: 0.00001
+epoch: 100
+batch_size: 3
+num_class: 10
+roi_size: [5,5]
+bilinear_size: [60,80]
+feature_size: [216,384]
+num_workers: 8
+max_box_num: 15
+max_group_num: 105
+pretrain_model: '/home/zhenghua/zj/gate_resnet_ci/models/resnet50-13-0.9463932388951255.pt'

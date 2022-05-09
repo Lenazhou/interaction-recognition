@@ -1,0 +1,15 @@
+work_dir: ./work_dir/ut
+data_dir: /home/zhenghua/two-stream-a
+dataset_dir: /home/zhenghua/zj/dataset/UT_interaction
+weight_decay: 0.01
+lr: 0.00001
+epoch: 100
+batch_size: 3
+num_class: 7
+roi_size: [5,5]
+bilinear_size: [60,80]
+feature_size: [240,360]
+num_workers: 8
+max_box_num: 5
+max_group_num: 10
+pretrain_model: '/home/zhenghua/zj/Fusion_shift_resnet/config/ut/data_name/resnet50-ut-0.879936305732484.pt'
