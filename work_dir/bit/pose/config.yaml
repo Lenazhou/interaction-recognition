@@ -1,0 +1,59 @@
+Experiment_name: bit/pose
+Max_group_num: 10
+Max_n: 5
+base_lr: 1.0e-05
+batch_size: 32
+config: ./config/bit/default-p.yaml
+data_dir: /home/zhenghua/two-stream-a
+dataset: bit
+dataset_dir: /home/zhenghua/zj/dataset/BIT
+device:
+- 0
+eval_interval: 5
+feeder: feeders.feeder.Feeder
+ignore_weights: []
+log_interval: 100
+model: model.shift_gcn.Model
+model_args:
+  graph: graph.ntu_rgb_d1.Graph
+  graph_args:
+    labeling_mode: spatial
+  num_class: 9
+  num_person: 1
+  num_point: 36
+model_saved_name: ./work_dir/bit/pose/weight
+nesterov: true
+num_epoch: 50
+num_worker: 32
+only_train_epoch: 1
+only_train_part: true
+optimizer: SGD
+phase: train
+print_log: true
+save_interval: 2
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 20
+- 40
+test_batch_size: 32
+test_feeder_args:
+  data_path: ./data/bit/test_data_bone.npy
+  label_path: ./data/bit/test_label.pkl
+train_feeder_args:
+  data_path: ./data/bit/train_data_bone.npy
+  debug: false
+  label_path: ./data/bit/train_label.pkl
+  normalization: false
+  random_choose: false
+  random_move: false
+  random_shift: false
+  window_size: -1
+warm_up_epoch: 0
+weight_decay: 0.0001
+weights: ''
+work_dir: ./work_dir/bit/pose

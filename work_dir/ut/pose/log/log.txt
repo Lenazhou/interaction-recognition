@@ -1,0 +1,11 @@
+Fri May  6 10:45:20 2022
+Fri May  6 10:50:11 2022
+Fri May  6 11:09:13 2022
+Fri May  6 11:10:24 2022
+Fri May  6 11:12:11 2022
+Fri May  6 11:15:54 2022
+Fri May  6 11:16:54 2022
+[ Mon May  9 13:31:47 2022 ] Parameters:
+{'work_dir': './work_dir/ut/pose', 'model_saved_name': './work_dir/ut/pose/weight', 'Experiment_name': 'ut/pose', 'dataset': 'ut', 'config': './config/ut/default-p.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 2, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder.Feeder', 'num_worker': 32, 'train_feeder_args': {'data_path': './data/ut/train_data_bone.npy', 'label_path': './data/ut/train_label.pkl', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': -1, 'normalization': False}, 'test_feeder_args': {'data_path': './data/ut/test_data_bone.npy', 'label_path': './data/ut/test_label.pkl'}, 'model': 'model.shift_gcn.Model', 'model_args': {'num_class': 9, 'num_point': 36, 'num_person': 1, 'graph': 'graph.ntu_rgb_d1.Graph', 'graph_args': {'labeling_mode': 'spatial'}}, 'weights': '', 'ignore_weights': [], 'base_lr': 1e-05, 'step': [20, 40], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 32, 'test_batch_size': 32, 'start_epoch': 0, 'num_epoch': 50, 'weight_decay': 0.0001, 'only_train_part': True, 'only_train_epoch': 1, 'warm_up_epoch': 0, 'data_dir': '/home/zhenghua/two-stream-a', 'dataset_dir': '/home/zhenghua/zj/dataset/UT_interaction', 'Max_n': 5, 'Max_group_num': 10}
+
+[ Mon May  9 13:31:47 2022 ] Training epoch: 1
